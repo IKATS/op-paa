@@ -16,10 +16,10 @@ limitations under the License.
 """
 # Simplify the import patterns for user
 # Instead of importing :
-#   from ikats.algo.op-paa.paa import run_paa_from_tsuid, run_paa_from_ts_list, run_paa_from_ds
+#   from ikats.algo.paa.paa import run_paa_from_tsuid, run_paa_from_ts_list, run_paa_from_ds
 # User will do:
-#   from ikats.algo.op-paa import run_paa_from_tsuid, run_paa_from_ts_list, run_paa_from_ds
+#   from ikats.algo.paa import run_paa_from_tsuid, run_paa_from_ts_list, run_paa_from_ds
 
 from pkgutil import extend_path
-from ikats.algo.op-paa.paa import PAA, run_paa, run_paa_from_ds, run_paa_from_ts_list, run_paa_from_tsuid
+from ikats.algo.paa.paa import PAA, run_paa, run_paa_from_ds, run_paa_from_ts_list, run_paa_from_tsuid
 __path__ = extend_path(__path__, __name__)

@@ -22,12 +22,12 @@ from unittest import TestCase
 import mock
 import numpy as np
 
-from ikats.algo.op-paa import run_paa_from_tsuid, run_paa_from_ts_list, run_paa_from_ds
+from ikats.algo.paa import run_paa_from_tsuid, run_paa_from_ts_list, run_paa_from_ds
 from ikats.core.resource.client import TemporalDataMgr
 
 TDM = TemporalDataMgr()
 
-LOGGER = logging.getLogger("ikats.algo.op-sax")
+LOGGER = logging.getLogger("ikats.algo.sax")
 # Log format
 LOGGER.setLevel(logging.DEBUG)
 FORMATTER = logging.Formatter('%(asctime)s:%(levelname)s:%(funcName)s:%(message)s')
